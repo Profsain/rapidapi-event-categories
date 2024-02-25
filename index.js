@@ -1,8 +1,11 @@
-const express = require('express');
+const express = require("express");
+const cors = require("cors");
 const app = express();
 
 const eventCategories = [
-    "Business & Professional",
+  "Business & Professional",
+  "Science & Tech",
+  "Birthday",
   "Music",
   "Food & Drink",
   "Community & Culture",
@@ -76,10 +79,15 @@ const eventCategories = [
   "Technology",
   "Weddings",
   "Workshops & Classes",
-  "Other"
+  "Other",
 ];
 
-app.get('/event-categories', (req, res) => {
+
+// middleware
+app.use(express.json());
+app.use(cors());
+
+app.get("/event-categories", (req, res) => {
   res.json(eventCategories);
 });
 

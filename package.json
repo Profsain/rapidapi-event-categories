@@ -6,10 +6,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["events", "eventcategories", "rapidapi", "api", "eventapi", "eventcategoriesapi"],
+  "keywords": [
+    "events",
+    "eventcategories",
+    "rapidapi",
+    "api",
+    "eventapi",
+    "eventcategoriesapi"
+  ],
   "author": "Profsain Husseini Mudi",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.18.2"
   }
 }
